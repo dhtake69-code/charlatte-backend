@@ -20,9 +20,9 @@ app.post("/api/transmettre-charlatte", async (req, res) => {
       });
     }
 
-    if (!Array.isArray(photos) || photos.length !== 8) {
+    if (!Array.isArray(photos) || photos.length !== 4) {
       return res.status(400).json({
-        error: "Il faut exactement 8 photos.",
+        error: "Il faut exactement 4 photos.",
       });
     }
 
